@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Files/FileWriterMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentGradeBook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/GradebookUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradebookapp/Gradebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradebookapp/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradebookapp/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/Files/FileWriterMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/StudentGradeBookproto.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/UI/GradebookUI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/UI/GradebookUI$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/UI/GradebookUI$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/UI/GradebookUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/gradebookapp/Gradebook.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/gradebookapp/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/gradebookapp/Subject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StudentGradeBookproto/student_records.txt" afterDir="false" />
+    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Added MainmenuUI with gradebookapp, view, edit and delete buttons.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +22,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2RgJMYmCpXbmIAxr8KxsWdjd9a6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/IdeaProjects/StudentGradeBookMain&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/USER/IdeaProjects/StudentGradeBookMain",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="GradebookUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI.GradebookUI" />
@@ -86,7 +84,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687665745435</updated>
+      <workItem from="1688234912169" duration="216000" />
+      <workItem from="1688240193142" duration="593000" />
     </task>
+    <task id="LOCAL-00001" summary="Added MainmenuUI with gradebookapp, view, edit and delete buttons.">
+      <created>1688235098802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688235098802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added MainmenuUI with gradebookapp, view, edit and delete buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MainmenuUI with gradebookapp, view, edit and delete buttons." />
   </component>
 </project>
