@@ -52,7 +52,7 @@ public class GradebookUI {
 
                 if (username.equals("admin") && password.equals("adminpass")) {
                     frame.dispose();
-                    GradebookWindowUI();
+                    MainmenuUI();
                 } else {
                     JOptionPane.showMessageDialog(frame, "Invalid username or password!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
@@ -60,6 +60,53 @@ public class GradebookUI {
         });
 
         frame.setVisible(true);
+    }
+
+    JFrame mainMenuFrame = new JFrame("Main Menu");
+    JButton gradebookAppButton = new JButton("Gradebook App");
+    JButton viewButton = new JButton("View");
+    JButton editButton = new JButton("Edit");
+    JButton deleteButton = new JButton("Delete");
+
+    public void MainmenuUI(){
+        mainMenuFrame.setBounds(100, 100, 300, 300);
+        mainMenuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        mainMenuFrame.getContentPane().setLayout(null);
+
+        gradebookAppButton.setBounds(50, 30, 200, 30);
+        viewButton.setBounds(50, 70, 200, 30);
+        editButton.setBounds(50, 110, 200, 30);
+        deleteButton.setBounds(50, 150, 200, 30);
+
+        gradebookAppButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                mainMenuFrame.dispose();
+                GradebookWindowUI();
+            }
+        });
+
+        viewButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+
+        editButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        deleteButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+
+        mainMenuFrame.getContentPane().add(gradebookAppButton);
+        mainMenuFrame.getContentPane().add(viewButton);
+        mainMenuFrame.getContentPane().add(editButton);
+        mainMenuFrame.getContentPane().add(deleteButton);
+
+        mainMenuFrame.setVisible(true);
     }
 
     JFrame gradebookframe = new JFrame("Student Gradebook");
