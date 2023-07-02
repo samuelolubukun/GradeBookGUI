@@ -3,6 +3,7 @@ package UI;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.IOException;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import DB.DatabaseConnector;
@@ -90,7 +91,7 @@ public class GradebookUI {
 
         viewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
+                viewRecords();
             }
         });
 
@@ -294,6 +295,47 @@ public class GradebookUI {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public void viewRecords() {
+        try {
+            // Connect to the database
+            DatabaseConnector connector = new DatabaseConnector();
+            connector.connect();
+
+            // Retrieve the student records from the database
+            ResultSet resultSet = connector.getAllStudents();
+
+            StringBuilder recordsBuilder = new StringBuilder();
+            recordsBuilder.append("Student Records:\n\n");
+
+            // Iterate through the result set and append the data to the StringBuilder
+            while (resultSet.next()) {
+                String name = resultSet.getString("name");
+                String matriculation = resultSet.getString("matriculation");
+                String faculty = resultSet.getString("faculty");
+                String department = resultSet.getString("department");
+                int level = resultSet.getInt("level");
+                double overallGPA = resultSet.getDouble("overall_gpa");
+
+                recordsBuilder.append("Name: ").append(name).append("\n");
+                recordsBuilder.append("Matriculation Number: ").append(matriculation).append("\n");
+                recordsBuilder.append("Faculty: ").append(faculty).append("\n");
+                recordsBuilder.append("Department: ").append(department).append("\n");
+                recordsBuilder.append("Level: ").append(level).append("\n");
+                recordsBuilder.append("Overall GPA: ").append(overallGPA).append("\n\n");
+            }
+
+            // Close the result set and database connection
+            resultSet.close();
+            connector.close();
+
+
+            JOptionPane.showMessageDialog(gradebookframe, recordsBuilder.toString(), "Student Records", JOptionPane.INFORMATION_MESSAGE);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public void saveReport() {

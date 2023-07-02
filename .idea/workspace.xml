@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Added DatabaseConnector class for Database(My Sql)">
+    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Implemented Save to database(gradebook) in CalculateGPA() function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +88,7 @@
       <workItem from="1688240193142" duration="1875000" />
       <workItem from="1688252645922" duration="358000" />
       <workItem from="1688267702630" duration="433000" />
-      <workItem from="1688269443680" duration="322000" />
+      <workItem from="1688269443680" duration="1088000" />
     </task>
     <task id="LOCAL-00001" summary="Added MainmenuUI with gradebookapp, view, edit and delete buttons.">
       <created>1688235098802</created>
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688269460120</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented Save to database(gradebook) in CalculateGPA() function">
+      <created>1688270101765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688270101765</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added MainmenuUI with gradebookapp, view, edit and delete buttons." />
     <MESSAGE value="Added DatabaseConnector class for Database(My Sql)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DatabaseConnector class for Database(My Sql)" />
+    <MESSAGE value="Implemented Save to database(gradebook) in CalculateGPA() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Save to database(gradebook) in CalculateGPA() function" />
   </component>
 </project>
