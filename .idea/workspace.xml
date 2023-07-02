@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Added MainmenuUI with gradebookapp, view, edit and delete buttons.">
+    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Added DatabaseConnector class for Database(My Sql)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,31 +31,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/USER/IdeaProjects/StudentGradeBookMain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/IdeaProjects/StudentGradeBookMain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="GradebookUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI.GradebookUI" />
@@ -85,7 +85,10 @@
       <option name="presentableId" value="Default" />
       <updated>1687665745435</updated>
       <workItem from="1688234912169" duration="216000" />
-      <workItem from="1688240193142" duration="593000" />
+      <workItem from="1688240193142" duration="1875000" />
+      <workItem from="1688252645922" duration="358000" />
+      <workItem from="1688267702630" duration="433000" />
+      <workItem from="1688269443680" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="Added MainmenuUI with gradebookapp, view, edit and delete buttons.">
       <created>1688235098802</created>
@@ -94,7 +97,42 @@
       <option name="project" value="LOCAL" />
       <updated>1688235098802</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added DatabaseConnector class for Database(My Sql)">
+      <created>1688240995349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688240995349</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added DatabaseConnector class for Database(My Sql)">
+      <created>1688241326353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688241326353</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added DatabaseConnector class for Database(My Sql)">
+      <created>1688252795361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688252795361</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added DatabaseConnector class for Database(My Sql)">
+      <created>1688267731759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688267731759</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added DatabaseConnector class for Database(My Sql)">
+      <created>1688269460120</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688269460120</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added MainmenuUI with gradebookapp, view, edit and delete buttons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MainmenuUI with gradebookapp, view, edit and delete buttons." />
+    <MESSAGE value="Added DatabaseConnector class for Database(My Sql)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DatabaseConnector class for Database(My Sql)" />
   </component>
 </project>

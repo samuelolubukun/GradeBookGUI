@@ -3,6 +3,9 @@ package UI;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.IOException;
+import java.sql.SQLException;
+
+import DB.DatabaseConnector;
 import gradebookapp.Student;
 import gradebookapp.Gradebook;
 import gradebookapp.Subject;
@@ -87,6 +90,7 @@ public class GradebookUI {
 
         viewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
             }
         });
 
@@ -269,8 +273,25 @@ public class GradebookUI {
             }
 
             reportTextArea.append("\nOverall GPA: " + student.getOverallGPA());
+
+            // Save data to the database
+            DatabaseConnector connector = new DatabaseConnector();
+            connector.connect();
+
+            // Insert student information
+            int studentId = connector.insertStudent(student);
+
+            // Insert subject information
+            for (Subject subject : student.getSubjects()) {
+                connector.insertSubject(studentId, subject);
+            }
+
+
+            connector.close();
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(frame, "Invalid input entered!", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
 
     }
