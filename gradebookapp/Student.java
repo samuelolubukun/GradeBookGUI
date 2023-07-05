@@ -33,24 +33,12 @@ public class Student {
         return faculty;
     }
 
-    public void setFaculty(String faculty) {
-        this.faculty = faculty;
-    }
-
     public String getDepartment() {
         return department;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
     public int getLevel() {
         return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
     }
 
     public void addSubject(String name, double grade, int units) {

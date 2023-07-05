@@ -71,6 +71,48 @@ public class DatabaseConnector {
         }
     }
 
+    
+
+    public void updateStudent(int studentId, Student updatedStudent) throws SQLException {
+        // Prepare the SQL statement for updating student information
+        String updateStudentQuery = "UPDATE students SET name = ?, matriculation = ?, faculty = ?, department = ?, level = ?, overall_gpa = ? WHERE id = ?";
+
+        PreparedStatement statement = connection.prepareStatement(updateStudentQuery);
+        statement.setString(1, updatedStudent.getName());
+        statement.setString(2, updatedStudent.getMatriculationNumber());
+        statement.setString(3, updatedStudent.getFaculty());
+        statement.setString(4, updatedStudent.getDepartment());
+        statement.setInt(5, updatedStudent.getLevel());
+        statement.setDouble(6, updatedStudent.getOverallGPA());
+        statement.setInt(7, studentId);
+
+        // Execute the update statement
+        statement.executeUpdate();
+
+        // Close the statement
+        statement.close();
+    }
+
+    public void updateSubject(int subjectId, Subject updatedSubject) throws SQLException {
+        // Prepare the SQL statement for updating subject information
+        String updateSubjectQuery = "UPDATE subjects SET subject_naame = ?, grade = ?, units = ? WHERE id = ?";
+
+        PreparedStatement statement = connection.prepareStatement(updateSubjectQuery);
+        statement.setString(1, updatedSubject.getName());
+        statement.setDouble(2, updatedSubject.getGrade());
+        statement.setInt(3, updatedSubject.getUnits());
+        statement.setInt(4, subjectId);
+
+        // Execute the update statement
+        statement.executeUpdate();
+
+        // Close the statement
+        statement.close();
+    }
+
+
+
+
     public ResultSet getAllStudents() throws SQLException {
         String query = "SELECT * FROM students";
         Statement statement = connection.createStatement();

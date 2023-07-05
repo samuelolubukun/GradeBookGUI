@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Implemented Save to database(gradebook) in CalculateGPA() function">
+    <list default="true" id="88ef3cd5-0e73-467f-8b0f-7b70fa2c4d5f" name="Changes" comment="Implemented viewRecords() to display student details(from the student table) in the database(gradebook)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/DB/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/GradebookUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/GradebookUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradebookapp/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/gradebookapp/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,17 @@
       <workItem from="1688240193142" duration="1875000" />
       <workItem from="1688252645922" duration="358000" />
       <workItem from="1688267702630" duration="433000" />
-      <workItem from="1688269443680" duration="1088000" />
+      <workItem from="1688269443680" duration="2085000" />
+      <workItem from="1688333729925" duration="2006000" />
+      <workItem from="1688352337439" duration="3044000" />
+      <workItem from="1688396687299" duration="3123000" />
+      <workItem from="1688403261282" duration="332000" />
+      <workItem from="1688405129936" duration="4000" />
+      <workItem from="1688406009684" duration="652000" />
+      <workItem from="1688528390050" duration="1720000" />
+      <workItem from="1688532941085" duration="458000" />
+      <workItem from="1688570325312" duration="18000" />
+      <workItem from="1688570387086" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Added MainmenuUI with gradebookapp, view, edit and delete buttons.">
       <created>1688235098802</created>
@@ -139,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688270101765</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implemented viewRecords() to display student details(from the student table) in the database(gradebook)">
+      <created>1688270831144</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688270831144</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +180,12 @@
     <MESSAGE value="Added MainmenuUI with gradebookapp, view, edit and delete buttons." />
     <MESSAGE value="Added DatabaseConnector class for Database(My Sql)" />
     <MESSAGE value="Implemented Save to database(gradebook) in CalculateGPA() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Save to database(gradebook) in CalculateGPA() function" />
+    <MESSAGE value="Implemented viewRecords() to display student details(from the student table) in the database(gradebook)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented viewRecords() to display student details(from the student table) in the database(gradebook)" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GradeBookGUI$GradebookUI.ic" NAME="GradebookUI Coverage Results" MODIFIED="1688397358723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>UI.*</FILTER>
+    </SUITE>
   </component>
 </project>

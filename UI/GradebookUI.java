@@ -1,6 +1,7 @@
 package UI;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 import java.sql.ResultSet;
@@ -330,13 +331,19 @@ public class GradebookUI {
             resultSet.close();
             connector.close();
 
+            JTextArea textArea = new JTextArea(recordsBuilder.toString());
+            textArea.setEditable(false);
 
-            JOptionPane.showMessageDialog(gradebookframe, recordsBuilder.toString(), "Student Records", JOptionPane.INFORMATION_MESSAGE);
+            JScrollPane scrollPane = new JScrollPane(textArea);
+            scrollPane.setPreferredSize(new Dimension(400, 300));
+
+            JOptionPane.showMessageDialog(gradebookframe, scrollPane, "Student Records", JOptionPane.INFORMATION_MESSAGE);
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
+
 
     public void saveReport() {
         try {
